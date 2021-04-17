@@ -1,5 +1,4 @@
-// @ts-check
-const db = firebase.default.firestore();
+const db = firebase.firestore();
 
 async function getAllData() {
     const { docs } = await db.collection('users').get();
